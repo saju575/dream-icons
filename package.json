@@ -1,0 +1,53 @@
+{
+  "name": "dream-icons",
+  "version": "1.0.9",
+  "description": "A lightweight and customizable ReactJS icon library",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.esm.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rm -rf dist",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Ideeza",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "husky": "^8.0.0",
+    "rollup": "^4.28.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ideeza2021/Ideeza-icons.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/ideeza2021/Ideeza-icons/issues"
+  },
+  "homepage": "https://gitlab.com/ideeza2021/Ideeza-icons#readme"
+}
