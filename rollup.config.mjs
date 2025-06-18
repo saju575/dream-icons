@@ -1,6 +1,6 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
+import typescript from "rollup-plugin-typescript2"; // ✅ changed here
 import svg from "rollup-plugin-svg";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
@@ -24,8 +24,8 @@ export default {
     commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
-      declaration: true,
-      declarationDir: 'dist',
+      useTsconfigDeclarationDir: true, // ✅ ensures declarationDir works
+      clean: true, // ✅ removes old cache
     }),
     svg(),
   ],
