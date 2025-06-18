@@ -1,6 +1,6 @@
 {
   "name": "dream-icons",
-  "version": "1.0.9",
+  "version": "1.0.2",
   "description": "A lightweight and customizable ReactJS icon library",
   "main": "dist/index.cjs",
   "module": "dist/index.esm.js",
@@ -9,8 +9,16 @@
     "dist"
   ],
   "exports": {
-    "require": "./dist/index.cjs",
-    "import": "./dist/index.esm.js"
+    "import": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.esm.js"
+    },
+    "require": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.cjs"
+    },
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.esm.js"
   },
   "scripts": {
     "build": "rollup -c",
@@ -18,7 +26,7 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "Ideeza",
+  "author": "Dream Team",
   "license": "ISC",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -44,10 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/ideeza2021/Ideeza-icons.git"
+    "url": "git+https://github.com/saju575/dream-icons.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/ideeza2021/Ideeza-icons/issues"
+    "url": "https://github.com/saju575/dream-icons/issues"
   },
-  "homepage": "https://gitlab.com/ideeza2021/Ideeza-icons#readme"
+  "homepage": "https://github.com/saju575/dream-icons#readme"
 }
